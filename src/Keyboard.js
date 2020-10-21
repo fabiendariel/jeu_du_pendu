@@ -10,5 +10,13 @@ const Keyboard = ({ letter, onClick, feedback}) => (
     </span>
   </div>
 )
-
+ 
+Keyboard.propTypes = {
+  letter: PropTypes.string.isRequired,
+  feedback: PropTypes.oneOf([
+    'gray',
+    '#17a2b8'    
+  ]).isRequired,
+  onClick: PropTypes.func.isRequired,
+}
 export default Keyboard

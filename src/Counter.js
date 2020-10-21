@@ -15,8 +15,8 @@ Counter.propTypes = {
   gameState: PropTypes.oneOf([
     'en cours',
     'perdu',
-    'gagné',
+    'gagnée',
   ]).isRequired,
 }
-
+ 
 export default Counter

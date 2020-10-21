@@ -50,7 +50,7 @@ class App extends Component {
 
   handleClick = letter => {
     const { selection, gameState } = this.state
-    if(gameState == "en cours") {
+    if(gameState === "en cours") {
       this.setState({selection: [...selection, letter]}, this.gameState)
     }
   }

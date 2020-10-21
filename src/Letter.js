@@ -11,5 +11,13 @@ const Letter = ({ letter, feedback}) => (
     </span>
   </div>
 )
-
+ 
+Letter.propTypes = {
+  letter: PropTypes.string.isRequired,
+  feedback: PropTypes.oneOf([
+    'visible',
+    'hidden'
+  ]).isRequired,
+}
+ 
 export default Letter
